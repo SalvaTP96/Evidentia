@@ -1,0 +1,270 @@
+:root {
+    --color-1: #ff9ef2;
+    --color-1-rgba: #472029a8;
+    --color-2: #ff708f;
+    --color-3: #ff4d6d;
+    --color-4: #ff2949;
+    --color-5: #472029;
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+
+
+.header {
+    background-image: linear-gradient(to bottom, rgba(215, 117, 149, .55), rgba(221, 151, 216, .55)), url(images/dentist-8729625_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+}
+
+.pre-header{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0px 250px;
+    height: 60px;
+    position: fixed !important;
+    z-index: 1000 ;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, .6);
+    box-shadow: #00000050 0px 0px 10px 0px;
+}
+
+.logo {
+    color: rgb(0, 0, 0);
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+}
+
+.navbar-brand {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+
+.navbar-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.button-container {
+    display: flex;
+    margin-top: 5%;
+}
+
+
+button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 1em 2.5em 1em 2.5em;
+    border: none;
+    background: #fff;
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+   }
+   
+   button:active {
+    transform: scale(0.95);
+   }
+   
+   button span {
+    color: #464646;
+   }
+
+   button .border {
+    position: absolute;
+    border: 0.15em solid #fff;
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+   }
+   
+   button:hover .border {
+    display: block;
+    width: 9.9em;
+    height: 3.7em;
+    cursor: pointer;
+   }
+   
+   .full-rounded {
+    border-radius: 2em;
+   }
+
+   .header-text{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+   }
+
+   .header-text span{
+    color: #d35f7f;
+    font-size: 10rem;
+   }
+
+   .header-text .texto-1{
+    margin-left: -35%;
+   }
+
+   .header-text .texto-2{
+    margin-top: -70px;
+    margin-left: -20%;
+
+   }
+
+   .equipo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 920px;
+   }
+
+   .equipo h1{
+    font-size: 2rem;
+    color: var(--color-2);
+    text-transform: uppercase;
+   }
+
+   .equipo h2{
+    font-size: 1.5rem;
+    color: var(--color-2);
+   }
+
+   .equipo p{
+    font-size: 1.2rem;
+    color: var(--color-2);
+    text-align: center;
+    margin-top: 20px;
+   }
+
+   .container-team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 150px;
+    max-width: 1300px;
+   }
+
+   .card-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+   }
+
+   .card-team img{
+    width: 280px;
+    height: 280px;
+    border-radius: 100%;
+   }
+
+footer{
+    background-color: var(--color-5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+
+/* Estilos responsive */
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        background-color: #490043;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .navbar-menu.active {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        height: 40vh;
+        width: 100%;    
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        display: flex;
+        width: 35px;
+    }
+
+    button {
+        font-size: 14px;
+        position: relative;
+        margin: auto;
+        padding: 1em 2em 1em 2em;
+        border: none;
+        background: #fff;
+        transition: all 0.1s linear;
+        box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+       }
+
+       button .border {
+        position: absolute;
+        border: 0.15em solid #fff;
+        transition: all 0.3s 0.08s linear;
+        top: 50%;
+        left: 50%;
+        width: 8em;
+        height: 3em;
+        transform: translate(-50%, -50%);
+       }
+       
+       button:hover .border {
+        display: block;
+        width: 8.7em;
+        height: 3.7em;
+       }
+}
