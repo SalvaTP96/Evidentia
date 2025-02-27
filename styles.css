@@ -19,25 +19,13 @@ body {
     line-height: 1.6;
 }
 
-
-
-.header {
-    background-image: linear-gradient(to bottom, rgba(215, 117, 149, .55), rgba(221, 151, 216, .55)), url(images/dentist-8729625_1920.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 70vh;
-    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
-}
-
 .pre-header{
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 0px 250px;
+    padding: 0px 100px;
     height: 60px;
     position: fixed !important;
     z-index: 1000 ;
@@ -55,19 +43,13 @@ body {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 70px;
+    gap: 40px;
 }
-
-.navbar-brand {
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-}
-
 
 .navbar-link {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -76,6 +58,40 @@ nav ul {
     flex-direction: column;
     cursor: pointer;
 }
+
+.header {
+    background-image: linear-gradient(to bottom, rgba(215, 117, 149, .55), rgba(221, 151, 216, .55)), url(images/dentist-8729625_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 70vh;
+    clip-path: polygon(50% 100%, 100% 90%, 100% 0, 0 0, 0 90%);
+}
+
+.header-text{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 100px;
+   }
+
+   .header-text span{
+    color: #d35f7f;
+    font-size: 10rem;
+   }
+
+   .header-text .texto-1{
+    margin-left: -35%;
+   }
+
+   .header-text .texto-2{
+    margin-top: -70px;
+    margin-left: -20%;
+
+   }
+
+
 
 
 .button-container {
@@ -125,27 +141,7 @@ button {
     border-radius: 2em;
    }
 
-   .header-text{
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 100px;
-   }
-
-   .header-text span{
-    color: #d35f7f;
-    font-size: 10rem;
-   }
-
-   .header-text .texto-1{
-    margin-left: -35%;
-   }
-
-   .header-text .texto-2{
-    margin-top: -70px;
-    margin-left: -20%;
-
-   }
+   
 
    .equipo{
     display: flex;
@@ -215,7 +211,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         width: 50%;
-        background-color: #490043;
+        background-color: var(--color-5);
         position: absolute;
         top: 0px;
         right: 0;
